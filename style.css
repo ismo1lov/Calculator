@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42, 43, 45);
+}
+
+form {
+    padding: 20px;
+    background-color: rgb(27, 28, 30);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgb(59, 59, 59);
+}
+
+input {
+    margin: 10px;
+    width: 80px;
+    height: 60px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: -5px -5px 10px rgb(57, 56, 56), 8px 8px 15px black;
+    transition: 0.2s all ease-in-out;
+}
+
+.small:active {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+}
+
+input.display {
+    width: 95%;
+    margin-bottom: 25px;
+    box-shadow: -5px -5px 10px rgb(57, 56, 56), 8px 8px 15px black, -5px -5px 10px rgb(57, 56, 56) inset, 8px 8px 15px black inset;
+    font-family: sans-serif;
+    padding: 0 15px;
+    color: aqua;
+    font-size: 22px;
+}
+
+.equal {
+    width: 44.5%;
+}
+
+.active {
+    color: aqua;
+}
+
+@media (max-width: 510px) {
+    form {
+        width: 90%;
+        margin: auto;
+    }
+
+    .box{
+        display: flex;
+    }
+
+    .box input{
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 360px){
+    .box input{
+        height: 50px;
+    }
+}
